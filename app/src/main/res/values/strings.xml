@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">edstem task</string>
+    <string name="church_name">Trinity Mar Thoma Church, Houston</string>
+    <string name="cd_church_logo">cd_church_logo</string>
+    <string name="home">Home</string>
+    <string name="family">Family</string>
+    <string name="activity">Activity</string>
+    <string name="contribution">Contribution</string>
+
+    <string name="text_spaces">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
 </resources>

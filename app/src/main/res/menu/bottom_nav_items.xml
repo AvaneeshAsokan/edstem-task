@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home_menu"
+        android:title="@string/home"
+        android:icon="@drawable/ic_house"/>
+    <item android:id="@+id/family"
+        android:title="@string/family"
+        android:icon="@drawable/ic_family"/>
+    <item android:id="@+id/activity"
+        android:title="@string/activity"
+        android:icon="@drawable/ic_activity"/>
+    <item android:id="@+id/contribute"
+        android:title="@string/contribution"
+        android:icon="@drawable/ic_contribute"
+        app:showAsAction="withText"/>
+</menu>
