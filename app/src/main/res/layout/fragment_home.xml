@@ -10,94 +10,11 @@
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/_20sdp">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/profile_pic"
-            android:layout_width="@dimen/_80sdp"
-            android:layout_height="@dimen/_80sdp"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
-
-        <ImageView
-            android:id="@+id/edit_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_20sdp"
-            android:src="@drawable/ic_edit"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/profile_pic" />
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:fontFamily="@font/playfair_display_sc"
-            android:lines="1"
-            android:text="Abraham Thomas"
-            android:textSize="@dimen/_16sdp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@id/profile_pic"
-            app:layout_constraintStart_toStartOf="@id/profile_pic"
-            app:layout_constraintTop_toBottomOf="@id/profile_pic" />
-
-        <LinearLayout
+        <include
             android:id="@+id/user_info_holder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
+            layout="@layout/user_info_layout"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/name">
-
-            <TextView
-                android:id="@+id/locality"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/archivo"
-                android:text="Peral Land East"
-                android:textColor="@color/subtitle_colour"
-                android:textSize="@dimen/_10ssp" />
-
-            <ImageView
-                android:layout_width="@dimen/_5sdp"
-                android:layout_height="@dimen/_5sdp"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:backgroundTint="@color/subtitle_colour"
-                android:src="@drawable/ic_diamond" />
-
-            <TextView
-                android:id="@+id/reg_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/archivo"
-                android:text="#56566"
-                android:textColor="@color/subtitle_colour"
-                android:textSize="@dimen/_10ssp" />
-
-            <ImageView
-                android:layout_width="@dimen/_5sdp"
-                android:layout_height="@dimen/_5sdp"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:backgroundTint="@color/subtitle_colour"
-                android:src="@drawable/ic_diamond" />
-
-            <TextView
-                android:id="@+id/gender"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/archivo"
-                android:text="Male"
-                android:textColor="@color/subtitle_colour"
-                android:textSize="@dimen/_10ssp" />
-        </LinearLayout>
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <include
             android:id="@+id/socials"
@@ -105,8 +22,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_20sdp"
-            app:layout_constraintEnd_toEndOf="@id/user_info_holder"
-            app:layout_constraintStart_toStartOf="@id/user_info_holder"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            app:layout_constraintEnd_toEndOf="@id/contact_info"
+            app:layout_constraintStart_toStartOf="@id/contact_info"
             app:layout_constraintTop_toBottomOf="@id/user_info_holder" />
 
         <include

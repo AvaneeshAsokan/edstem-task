@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2705" />
         <entry key="app/src/main/res/drawable/bottom_nav_tab_background.xml" value="0.2705" />
         <entry key="app/src/main/res/drawable/circular_bg.xml" value="0.2705" />
+        <entry key="app/src/main/res/drawable/drawer_bg.xml" value="0.268" />
         <entry key="app/src/main/res/drawable/fade_in_recycler_bg.xml" value="0.268" />
         <entry key="app/src/main/res/drawable/fragment_border.xml" value="0.2705" />
         <entry key="app/src/main/res/drawable/households_bg.xml" value="0.2705" />
@@ -17,14 +18,18 @@
         <entry key="app/src/main/res/font/archivo.xml" value="0.3776041666666667" />
         <entry key="app/src/main/res/font/playfair_display.xml" value="0.37864583333333335" />
         <entry key="app/src/main/res/font/playfair_display_sc.xml" value="0.37864583333333335" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33229166666666665" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/activity_main_content.xml" value="0.346875" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="app/src/main/res/layout/birthday_item.xml" value="0.67" />
         <entry key="app/src/main/res/layout/contact_info_layout.xml" value="0.4057177615571776" />
+        <entry key="app/src/main/res/layout/drawer_layout.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3484375" />
         <entry key="app/src/main/res/layout/household_item.xml" value="0.34739583333333335" />
         <entry key="app/src/main/res/layout/social_links_layout.xml" value="0.3473731884057971" />
+        <entry key="app/src/main/res/layout/user_info_layout.xml" value="0.3463541666666667" />
         <entry key="app/src/main/res/menu/bottom_nav_items.xml" value="0.822265625" />
+        <entry key="app/src/main/res/menu/side_menu_item.xml" value="0.3463541666666667" />
       </map>
     </option>
   </component>
