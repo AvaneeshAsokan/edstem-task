@@ -9,10 +9,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.edstem.mockup.adapters.EventReminderAdapter
 import com.edstem.mockup.adapters.HouseholdsAdapter
+import com.edstem.mockup.adapters.layoutManagers.FadeInLayoutManager
 import com.edstem.mockup.data.HouseholdMembers
 import com.edstem.mockup.data.ReminderItems
 import com.edstem.mockup.databinding.FragmentHomeBinding
 import com.edstem.mockup.enums.ReminderType
+import java.text.SimpleDateFormat
+import java.util.*
 
 class HomeFragment: Fragment() {
 
@@ -33,13 +36,29 @@ class HomeFragment: Fragment() {
         super.onResume()
         showHouseMembers()
         showEventReminders()
+        binding.birthdayBtn.setOnClickListener {
+            binding.birthdayBtn.alpha = 1F
+            binding.anniversaryBtn.alpha = 0.5F
+            binding.birthdayBtnAccent.visibility = View.VISIBLE
+            binding.anniversaryBtnAccent.visibility = View.GONE
+            reminderAdapter.setShowType(ReminderType.BIRTHDAY)
+        }
+        binding.anniversaryBtn.setOnClickListener {
+            binding.anniversaryBtn.alpha = 1F
+            binding.birthdayBtn.alpha = 0.5F
+            binding.birthdayBtnAccent.visibility = View.GONE
+            binding.anniversaryBtnAccent.visibility = View.VISIBLE
+            reminderAdapter.setShowType(ReminderType.WEDDING)
+        }
     }
 
     /*todo: show the other list when the wedding button is tapped*/
     private fun showEventReminders() {
+        val today = Calendar.getInstance().time
+
         val reminders = listOf(
             ReminderItems("Rachel Thomas", "May 28 2022, Saturday", null, ReminderType.BIRTHDAY),
-            ReminderItems("Aby Thomas", "May 31 2022, Tuesday", null, ReminderType.BIRTHDAY),
+            ReminderItems("Aby Thomas", SimpleDateFormat("MMM dd yyyy, EEEE", Locale.getDefault()).format(today), null, ReminderType.BIRTHDAY),
             ReminderItems("Gaby Thomas", "Jun 1 2022, Wednesday", null, ReminderType.BIRTHDAY),
             ReminderItems("Aby Thomas", "Jun 2 2022, Thursday", null, ReminderType.WEDDING),
         )
@@ -48,7 +67,7 @@ class HomeFragment: Fragment() {
         reminderAdapter.setData(reminders, ReminderType.BIRTHDAY)
 
         with(binding.birthdaysRv) {
-            layoutManager = LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
+            layoutManager = FadeInLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
             adapter = reminderAdapter
         }
     }

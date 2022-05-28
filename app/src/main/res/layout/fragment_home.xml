@@ -7,7 +7,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20sdp">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/profile_pic"
@@ -163,6 +164,8 @@
             android:text="Birthdays"
             android:fontFamily="@font/playfair_display_bold"
             android:textStyle="bold"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
             app:layout_constraintEnd_toStartOf="@id/anniversary_btn"
@@ -186,16 +189,28 @@
             android:fontFamily="@font/playfair_display_bold"
             android:textStyle="bold"
             android:alpha=".5"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
             android:layout_marginStart="@dimen/_10sdp"
             app:layout_constraintStart_toEndOf="@id/birthday_btn"
             app:layout_constraintTop_toBottomOf="@id/households_holder"
             app:layout_constraintTop_toTopOf="@id/birthday_btn" />
 
+        <View
+            android:id="@+id/anniversary_btn_accent"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/red"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/anniversary_btn"
+            app:layout_constraintTop_toBottomOf="@id/anniversary_btn"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/birthdays_rv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:layout_constraintTop_toBottomOf="@id/birthday_btn">
 
         </androidx.recyclerview.widget.RecyclerView>
