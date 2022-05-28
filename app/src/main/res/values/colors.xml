@@ -11,5 +11,7 @@
     <color name="red">#EC1E26</color>
     <color name="blue">#61D0DF</color>
     <color name="border_colour">#26474E73</color>
+    <color name="border_colour_light">#E3EEFF</color>
     <color name="icon_colour">#474E73</color>
+    <color name="subtitle_colour">#767C9C</color>
 </resources>

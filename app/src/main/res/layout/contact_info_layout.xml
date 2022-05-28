@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_info_holder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/address_holder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|start"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/circular_dot"
+            android:backgroundTint="@color/blue"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_location" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/playfair_display_sc"
+                android:text="Address"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/user_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo"
+                android:text="601 Lakeland Terrace"
+                android:textSize="@dimen/_9ssp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="@dimen/_2sdp"
+        android:layout_height="match_parent"
+        android:background="@color/border_colour_light" />
+
+    <LinearLayout
+        android:id="@+id/phone_holder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|start"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_phone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/playfair_display_sc"
+                android:text="Phone"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo"
+                android:text="916456584156"
+                android:textSize="@dimen/_9ssp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
