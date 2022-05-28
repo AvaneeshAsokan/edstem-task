@@ -5,9 +5,13 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.edstem.mockup.R
+import com.edstem.mockup.adapters.OverlappingItemAdapter
+import com.edstem.mockup.adapters.OverlappingItemDecoration
+import com.edstem.mockup.data.UserNotification
 import com.edstem.mockup.databinding.ActivityMainBinding
 import com.edstem.mockup.fragments.HomeFragment
 import com.google.android.material.navigation.NavigationView
@@ -17,6 +21,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private lateinit var binding: ActivityMainBinding
 
     private lateinit var homeFragment: HomeFragment
+    private lateinit var notificationAdapter: OverlappingItemAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +29,23 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(binding.root)
 
         bindListeners()
+        showNotificationBadges()
         binding.mainContent.bottomNav.selectedItemId = R.id.home_menu
+    }
+
+    private fun showNotificationBadges() {
+        notificationAdapter = OverlappingItemAdapter(this)
+        val notificationList = listOf(
+            UserNotification(R.drawable.notification_item1),
+            UserNotification(R.drawable.notification_item2),
+        )
+
+        notificationAdapter.setData(notificationList)
+        with(binding.mainContent.notificationBadges){
+            layoutManager = LinearLayoutManager(this@MainActivity, RecyclerView.HORIZONTAL, false)
+            addItemDecoration(OverlappingItemDecoration(-30))
+            adapter = notificationAdapter
+        }
     }
 
     private fun bindListeners() {
