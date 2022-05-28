@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/playfair_display_sc"
                 android:text="Address"
-                android:textSize="@dimen/_9ssp" />
+                android:textSize="@dimen/_10ssp" />
 
             <TextView
                 android:id="@+id/user_address"
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/archivo"
                 android:text="601 Lakeland Terrace"
-                android:textSize="@dimen/_9ssp" />
+                android:textSize="@dimen/_10ssp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/playfair_display_sc"
                 android:text="Phone"
-                android:textSize="@dimen/_9ssp" />
+                android:textSize="@dimen/_10ssp" />
 
             <TextView
                 android:id="@+id/user_phone"
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/archivo"
                 android:text="916456584156"
-                android:textSize="@dimen/_9ssp" />
+                android:textSize="@dimen/_10ssp" />
         </LinearLayout>
     </LinearLayout>
 

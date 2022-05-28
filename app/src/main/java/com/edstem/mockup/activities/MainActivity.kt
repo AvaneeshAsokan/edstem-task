@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         bindListeners()
+        binding.bottomNav.selectedItemId = R.id.home_menu
     }
 
     private fun bindListeners() {
@@ -31,6 +32,9 @@ class MainActivity : AppCompatActivity() {
                         }
                         loadFragment(homeFragment)
                     }
+                    R.id.family -> {}
+                    R.id.activity -> {}
+                    R.id.contribute -> {}
                 }
             }
         }
