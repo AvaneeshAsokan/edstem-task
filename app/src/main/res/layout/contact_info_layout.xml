@@ -57,7 +57,7 @@
         android:id="@+id/divider"
         android:layout_width="@dimen/_2sdp"
         android:layout_height="match_parent"
-        android:background="@color/border_colour_light" />
+        android:background="@color/border_colour" />
 
     <LinearLayout
         android:id="@+id/phone_holder"
