@@ -17,6 +17,7 @@
         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/birthday_icon"
         android:layout_width="@dimen/_15sdp"
         android:layout_height="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_7sdp"
@@ -35,28 +36,30 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@id/profile_pic"
-        app:layout_constraintStart_toEndOf="@id/profile_pic"
-        app:layout_constraintTop_toTopOf="@id/profile_pic"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="@dimen/_5sdp"
-        android:layout_marginEnd="@dimen/_5sdp">
+        app:layout_constraintStart_toEndOf="@id/profile_pic"
+        app:layout_constraintTop_toTopOf="@id/profile_pic">
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/playfair_display_sc"
-            android:text="Aby Thomas"
-            android:textStyle="bold"
-            android:textSize="@dimen/_10ssp"/>
+            android:text="@string/placeholder_aby_thomas"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold" />
+
         <TextView
+            android:id="@+id/date_of_birth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/archivo"
-            android:text="Feb 26 2021, Monday"
-            android:textSize="@dimen/_7ssp"/>
+            android:text="@string/placeholder_date"
+            android:textSize="@dimen/_7ssp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

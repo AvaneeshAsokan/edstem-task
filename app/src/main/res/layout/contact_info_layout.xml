@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/rounded_bg"
@@ -9,22 +10,24 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_5sdp"
-        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_5sdp"
         android:layout_weight="1"
         android:gravity="center_vertical|start"
         android:orientation="horizontal"
         android:paddingStart="@dimen/_5sdp"
         android:paddingTop="@dimen/_5sdp"
-        android:paddingBottom="@dimen/_5sdp">
+        android:paddingBottom="@dimen/_5sdp"
+        tools:ignore="RtlSymmetry">
 
         <ImageView
             android:layout_width="@dimen/_15sdp"
             android:layout_height="@dimen/_15sdp"
             android:background="@drawable/circular_dot"
             android:backgroundTint="@color/blue"
+            android:contentDescription="@null"
             android:padding="@dimen/_3sdp"
             android:src="@drawable/ic_location" />
 
@@ -38,14 +41,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/playfair_display_sc"
-                android:text="Address"
+                android:text="@string/title_address"
                 android:textSize="@dimen/_10ssp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:ellipsize="end"
                 android:fontFamily="@font/archivo"
-                android:text="601 Lakeland Terrace"
+                android:lines="1"
+                android:text="@string/placeholder_address"
                 android:textSize="@dimen/_10ssp" />
         </LinearLayout>
     </LinearLayout>
@@ -71,6 +76,7 @@
         <ImageView
             android:layout_width="@dimen/_15sdp"
             android:layout_height="@dimen/_15sdp"
+            android:contentDescription="@null"
             android:src="@drawable/ic_phone" />
 
         <LinearLayout
@@ -83,14 +89,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/playfair_display_sc"
-                android:text="Phone"
+                android:text="@string/title_phone"
                 android:textSize="@dimen/_10ssp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/archivo"
-                android:text="916456584156"
+                android:text="@string/placeholder_phone"
                 android:textSize="@dimen/_10ssp" />
         </LinearLayout>
     </LinearLayout>

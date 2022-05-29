@@ -18,7 +18,7 @@
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginTop="@dimen/_30sdp"
-                android:contentDescription="logo"
+                android:contentDescription="@string/cd_logo"
                 android:src="@drawable/logo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +68,7 @@
                 android:drawablePadding="@dimen/_10sdp"
                 android:fontFamily="@font/playfair_display_sc"
                 android:gravity="center"
-                android:text="Membership"
+                android:text="@string/membership"
                 android:textSize="@dimen/_12sdp"
                 app:drawableLeftCompat="@drawable/ic_id_card"
                 app:layout_constraintStart_toStartOf="parent"
@@ -93,12 +93,12 @@
                 android:drawablePadding="@dimen/_10sdp"
                 android:fontFamily="@font/playfair_display_sc"
                 android:gravity="center"
-                android:text="Edit Profile"
+                android:text="@string/edit_profile"
                 android:textSize="@dimen/_12sdp"
                 app:drawableLeftCompat="@drawable/ic_edit_profile"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/spacer"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintTop_toBottomOf="@id/spacer" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
@@ -115,10 +115,10 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         android:layout_gravity="bottom"
-        android:fontFamily="@font/playfair_display_sc"
         android:background="@color/white"
+        android:fontFamily="@font/playfair_display_sc"
         android:gravity="center"
-        android:text="Logout"
+        android:text="@string/logout"
         android:textSize="@dimen/_16sdp"
         app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
