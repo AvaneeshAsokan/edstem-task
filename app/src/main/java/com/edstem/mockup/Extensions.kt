@@ -6,14 +6,13 @@ import android.content.res.Resources
 import android.util.TypedValue
 import android.widget.Toast
 import androidx.core.content.res.ResourcesCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 
 /**
  * returns the required drawable
  *
- * @param res Int
+ * @param res ID of the resource
  * @return
  */
 fun Context.getDrawableRes(res: Int) =
@@ -34,6 +33,13 @@ val Float.px: Float
  */
 val Int.px: Int get() = toFloat().px.toInt()
 
+/**
+ * shows a regular toast when called from a context
+ *
+ * @param msg
+ * @param short shows [Toast.LENGTH_SHORT] when true and [Toast.LENGTH_LONG] when false.
+ * Default if true
+ */
 fun Context.toast(msg: String, short: Boolean = true) {
     Toast.makeText(this, msg, if (short) Toast.LENGTH_SHORT else Toast.LENGTH_LONG).show()
 }
@@ -42,7 +48,6 @@ fun Context.toast(msg: String, short: Boolean = true) {
  * makes the activity go fullscreen
  */
 fun Activity.hideSystemBars() {
-//    WindowCompat.setDecorFitsSystemWindows(window, false)
     WindowInsetsControllerCompat(window, window.decorView).apply {
         hide(WindowInsetsCompat.Type.statusBars())
         hide(WindowInsetsCompat.Type.navigationBars())

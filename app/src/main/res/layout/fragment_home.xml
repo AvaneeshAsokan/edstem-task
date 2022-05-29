@@ -59,7 +59,6 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <View
-                android:id="@+id/household_title_accent"
                 android:layout_width="@dimen/_10sdp"
                 android:layout_height="@dimen/_2sdp"
                 android:background="@color/red"
@@ -68,7 +67,6 @@
                 app:layout_constraintTop_toBottomOf="@id/household_title"/>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/households_rv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
@@ -92,7 +90,6 @@
             app:layout_constraintTop_toBottomOf="@id/households_holder" />
 
         <View
-            android:id="@+id/birthday_btn_accent"
             android:layout_width="@dimen/_10sdp"
             android:layout_height="@dimen/_2sdp"
             android:background="@color/red"
@@ -116,7 +113,6 @@
             app:layout_constraintTop_toTopOf="@id/birthday_btn" />
 
         <View
-            android:id="@+id/anniversary_btn_accent"
             android:layout_width="@dimen/_10sdp"
             android:layout_height="@dimen/_2sdp"
             android:background="@color/red"
@@ -126,7 +122,6 @@
             app:layout_constraintTop_toBottomOf="@id/anniversary_btn"/>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/birthdays_rv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10sdp"

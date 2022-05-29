@@ -43,9 +43,7 @@
                 android:orientation="vertical"
                 app:layout_constraintTop_toBottomOf="@id/church_name">
 
-                <include
-                    android:id="@+id/menu_user_info"
-                    layout="@layout/user_info_layout" />
+                <include layout="@layout/user_info_layout" />
             </LinearLayout>
 
             <LinearLayout
@@ -58,9 +56,7 @@
                 android:paddingEnd="@dimen/_40sdp"
                 app:layout_constraintTop_toBottomOf="@id/menu_user_holder">
 
-                <include
-                    android:id="@+id/menu_socials"
-                    layout="@layout/social_links_layout" />
+                <include layout="@layout/social_links_layout" />
             </LinearLayout>
 
             <TextView
@@ -89,7 +85,6 @@
                 app:layout_constraintTop_toBottomOf="@id/membership_btn" />
 
             <TextView
-                android:id="@+id/edit_profile_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_30sdp"

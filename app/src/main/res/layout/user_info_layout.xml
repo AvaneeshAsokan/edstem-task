@@ -17,7 +17,6 @@
         app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
 
     <ImageView
-        android:id="@+id/edit_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/_20sdp"
@@ -50,7 +49,6 @@
         app:layout_constraintTop_toBottomOf="@id/name">
 
         <TextView
-            android:id="@+id/locality"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/archivo"
@@ -67,7 +65,6 @@
             android:src="@drawable/ic_diamond" />
 
         <TextView
-            android:id="@+id/reg_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/archivo"
@@ -84,7 +81,6 @@
             android:src="@drawable/ic_diamond" />
 
         <TextView
-            android:id="@+id/gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/archivo"

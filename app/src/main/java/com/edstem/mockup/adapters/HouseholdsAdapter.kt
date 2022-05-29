@@ -23,11 +23,14 @@ class HouseholdsAdapter(private val context: Context): RecyclerView.Adapter<Hous
         with(holder.binding){
             name.text = membersList[position].name
             relationship.text = membersList[position].relationship
-            profilePic.setImageDrawable(when(position) {
-                1 -> context.getDrawableRes(R.drawable.hm2)
-                2 -> context.getDrawableRes(R.drawable.hm3)
-                else -> context.getDrawableRes(R.drawable.hm1)
-            })
+
+            profilePic.setImageDrawable(
+                when (position) {
+                    1 -> context.getDrawableRes(R.drawable.hm2)
+                    2 -> context.getDrawableRes(R.drawable.hm3)
+                    else -> context.getDrawableRes(R.drawable.hm1)
+                }
+            )
         }
     }
 

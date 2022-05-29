@@ -17,6 +17,9 @@ import com.edstem.mockup.enums.ReminderType
 import java.text.SimpleDateFormat
 import java.util.*
 
+/**
+ * The my profile page
+ */
 class HomeFragment: Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
@@ -34,25 +37,36 @@ class HomeFragment: Fragment() {
 
     override fun onResume() {
         super.onResume()
+        bindListeners()
         showHouseMembers()
         showEventReminders()
-        binding.birthdayBtn.setOnClickListener {
-            binding.birthdayBtn.alpha = 1F
-            binding.anniversaryBtn.alpha = 0.5F
-            binding.birthdayBtnAccent.visibility = View.VISIBLE
-            binding.anniversaryBtnAccent.visibility = View.GONE
-            reminderAdapter.setShowType(ReminderType.BIRTHDAY)
-        }
-        binding.anniversaryBtn.setOnClickListener {
-            binding.anniversaryBtn.alpha = 1F
-            binding.birthdayBtn.alpha = 0.5F
-            binding.birthdayBtnAccent.visibility = View.GONE
-            binding.anniversaryBtnAccent.visibility = View.VISIBLE
-            reminderAdapter.setShowType(ReminderType.WEDDING)
+    }
+
+    private fun bindListeners() {
+        with(binding) {
+
+            birthdayBtn.setOnClickListener {
+                birthdayBtn.alpha               = 1F
+                anniversaryBtn.alpha            = 0.5F
+                birthdayBtnAccent.visibility    = View.VISIBLE
+                anniversaryBtnAccent.visibility = View.GONE
+                reminderAdapter.setShowType(ReminderType.BIRTHDAY)
+            }
+
+            anniversaryBtn.setOnClickListener {
+                anniversaryBtn.alpha            = 1F
+                birthdayBtn.alpha               = 0.5F
+                birthdayBtnAccent.visibility    = View.GONE
+                anniversaryBtnAccent.visibility = View.VISIBLE
+                reminderAdapter.setShowType(ReminderType.WEDDING)
+            }
         }
     }
 
-    /*todo: show the other list when the wedding button is tapped*/
+    /**
+     * Populates the [EventReminderAdapter] with dummy data where the 2nd element will always be
+     * the current date so that the birthday icon will be shown.
+     */
     private fun showEventReminders() {
         val today = Calendar.getInstance().time
 
@@ -73,7 +87,7 @@ class HomeFragment: Fragment() {
     }
 
     /**
-     * function to get the members of the current user's household, and displays them
+     * Populates the [HouseholdsAdapter] with mock members of the current user's household.
      */
     private fun showHouseMembers(){
         val membersList = listOf(
@@ -89,6 +103,5 @@ class HomeFragment: Fragment() {
             layoutManager = LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
             adapter = familyAdapter
         }
-
     }
 }

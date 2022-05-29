@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.edstem.mockup.databinding.FragmentComingSoonBinding
 
+/**
+ * A catch all fragment to show as a placeholder for unimplemented screens
+ */
 class ComingSoonFragment: Fragment() {
 
     private lateinit var binding: FragmentComingSoonBinding

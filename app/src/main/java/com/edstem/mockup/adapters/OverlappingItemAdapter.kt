@@ -9,6 +9,12 @@ import com.edstem.mockup.data.UserNotification
 import com.edstem.mockup.databinding.OverlappingNotificationItemBinding
 import com.edstem.mockup.getDrawableRes
 
+/**
+ * Adapter designed to showcase the functionality of [OverlappingItemDecoration] so the elements
+ * can appear slightly stacked on top of each other.
+ *
+ * @property context
+ */
 class OverlappingItemAdapter(private val context: Context): RecyclerView.Adapter<NotificationVH>() {
     private val notificationList = arrayListOf<UserNotification>()
 

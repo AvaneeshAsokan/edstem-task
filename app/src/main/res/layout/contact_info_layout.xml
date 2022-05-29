@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/contact_info_holder"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/rounded_bg"
@@ -8,7 +7,6 @@
     android:orientation="horizontal">
 
     <LinearLayout
-        android:id="@+id/address_holder"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_5sdp"
@@ -44,7 +42,6 @@
                 android:textSize="@dimen/_10ssp" />
 
             <TextView
-                android:id="@+id/user_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/archivo"
@@ -54,13 +51,11 @@
     </LinearLayout>
 
     <View
-        android:id="@+id/divider"
         android:layout_width="@dimen/_2sdp"
         android:layout_height="match_parent"
         android:background="@color/border_colour" />
 
     <LinearLayout
-        android:id="@+id/phone_holder"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10sdp"
@@ -92,7 +87,6 @@
                 android:textSize="@dimen/_10ssp" />
 
             <TextView
-                android:id="@+id/user_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/archivo"

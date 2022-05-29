@@ -1,10 +1,10 @@
 package com.edstem.mockup.adapters
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.edstem.mockup.R
 import com.edstem.mockup.adapters.viewHolders.ReminderVH
@@ -15,8 +15,18 @@ import com.edstem.mockup.getDrawableRes
 import java.text.SimpleDateFormat
 import java.util.*
 
+/**
+ * Recycler adapter implementation that compares the current system date with the date in the data
+ * available and shows the birthday Icon if the days match.
+ *
+ * I have also provided the ability to filter and reuse the adapter for showing other events that
+ * can be specified with [ReminderType]
+ *
+ * Note: The current implementation of the adapter using [notifyDataSetChanged] instead of [DiffUtil]
+ *
+ * @property context
+ */
 class EventReminderAdapter(private val context: Context): RecyclerView.Adapter<ReminderVH>() {
-    private val TAG = EventReminderAdapter::class.java.canonicalName
 
     private val filteredList = arrayListOf<ReminderItems>()
     private val reminderList = arrayListOf<ReminderItems>()
@@ -60,17 +70,21 @@ class EventReminderAdapter(private val context: Context): RecyclerView.Adapter<R
         notifyDataSetChanged()
     }
 
+    /**
+     * Compares the current system date with the data received by the adapter
+     *
+     * @param date
+     * @return Boolean, true if the dates match else false
+     */
     private fun isEventToday(date: String): Boolean {
         //  May 30 2022, Monday
-        val df = SimpleDateFormat("MMM dd yyyy, EEEE")
+        val df = SimpleDateFormat("MMM dd yyyy, EEEE", Locale.getDefault())
         val today = Calendar.getInstance().apply{
             set(Calendar.HOUR_OF_DAY, 0)
             set(Calendar.MINUTE, 0)
             set(Calendar.SECOND, 0)
             set(Calendar.MILLISECOND, 0)
         }
-
-        Log.d(TAG, "isEventToday: today = ${today.time}, other time = ${df.parse(date)}")
 
         return today.time == df.parse(date)
     }
