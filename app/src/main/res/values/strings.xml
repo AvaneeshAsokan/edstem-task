@@ -1,37 +1,47 @@
 <resources>
     <string name="app_name">edstem task</string>
     <string name="church_name">Trinity Mar Thoma Church, Houston</string>
-    <string name="cd_church_logo">cd_church_logo</string>
+
+    <!--Bottom Menu Items-->
     <string name="home">Home</string>
     <string name="family">Family</string>
     <string name="activity">Activity</string>
     <string name="contribution">Contribution</string>
 
+    <!--Drawer Items-->
     <string name="navigation_drawer_open">open</string>
     <string name="navigation_drawer_close">close</string>
-    <string name="cd_menu_button">menu button</string>
-    <string name="cd_logo">logo</string>
-    <string name="placeholder_aby_thomas">Aby Thomas</string>
-    <string name="placeholder_date">Feb 26 2021, Monday</string>
-    <string name="title_address">Address</string>
-    <string name="placeholder_address">601 Lakeland Terrace</string>
-    <string name="title_phone">Phone</string>
-    <string name="placeholder_phone">916456584156</string>
-    <string name="logout">Logout</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="membership">Membership</string>
-    <string name="placeholder_title">Title</string>
-    <string name="title_my_households">My Households</string>
-    <string name="title_birthdays">Birthdays</string>
-    <string name="title_anniversaries">Wedding Anniversaries</string>
-    <string name="placeholder_rachel_thomas">Rachel Thomas</string>
-    <string name="placeholder_relationship">Wife</string>
+    <string name="logout">Logout</string>
+
+    <!--Content Descriptions-->
+    <string name="cd_church_logo">cd_church_logo</string>
+    <string name="cd_menu_button">menu button</string>
+    <string name="cd_logo">logo</string>
     <string name="cd_twitter_link">Twitter Link</string>
     <string name="cd_linked_in_link">linked in link</string>
     <string name="cd_facebook_link">Facebook Link</string>
     <string name="cd_whatsapp_link">Whatsapp Link</string>
     <string name="cd_google_plus_link">Google Plus Link</string>
+
+    <!--Place holders-->
+    <string name="placeholder_aby_thomas">Aby Thomas</string>
+    <string name="placeholder_date">Feb 26 2021, Monday</string>
+    <string name="placeholder_address">601 Lakeland Terrace</string>
+    <string name="placeholder_phone">916456584156</string>
+    <string name="placeholder_title">Title</string>
+    <string name="placeholder_rachel_thomas">Rachel Thomas</string>
+    <string name="placeholder_relationship">Wife</string>
     <string name="placeholder_abraham_thomas">Abraham Thomas</string>
     <string name="placeholder_id">#56566</string>
     <string name="placeholder_sex">Male</string>
+
+    <!--Titles-->
+    <string name="title_address">Address</string>
+    <string name="title_phone">Phone</string>
+    <string name="title_my_households">My Households</string>
+    <string name="title_birthdays">Birthdays</string>
+    <string name="title_anniversaries">Wedding Anniversaries</string>
+
 </resources>

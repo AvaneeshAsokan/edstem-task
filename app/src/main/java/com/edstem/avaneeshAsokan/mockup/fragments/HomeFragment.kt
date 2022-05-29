@@ -1,4 +1,4 @@
-package com.edstem.mockup.fragments
+package com.edstem.avaneeshAsokan.mockup.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.edstem.mockup.adapters.EventReminderAdapter
-import com.edstem.mockup.adapters.HouseholdsAdapter
-import com.edstem.mockup.adapters.layoutManagers.FadeInLayoutManager
-import com.edstem.mockup.data.HouseholdMembers
-import com.edstem.mockup.data.ReminderItems
+import com.edstem.avaneeshAsokan.mockup.adapters.EventReminderAdapter
+import com.edstem.avaneeshAsokan.mockup.adapters.HouseholdsAdapter
+import com.edstem.avaneeshAsokan.mockup.adapters.layoutManagers.FadeInLayoutManager
+import com.edstem.avaneeshAsokan.mockup.data.HouseholdMembers
+import com.edstem.avaneeshAsokan.mockup.data.ReminderItems
 import com.edstem.mockup.databinding.FragmentHomeBinding
-import com.edstem.mockup.enums.ReminderType
+import com.edstem.avaneeshAsokan.mockup.enums.ReminderType
 import java.text.SimpleDateFormat
 import java.util.*
 

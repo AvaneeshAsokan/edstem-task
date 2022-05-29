@@ -1,14 +1,14 @@
-package com.edstem.mockup.adapters
+package com.edstem.avaneeshAsokan.mockup.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.edstem.mockup.R
-import com.edstem.mockup.adapters.viewHolders.HouseholdVH
-import com.edstem.mockup.data.HouseholdMembers
+import com.edstem.avaneeshAsokan.mockup.adapters.viewHolders.HouseholdVH
+import com.edstem.avaneeshAsokan.mockup.data.HouseholdMembers
 import com.edstem.mockup.databinding.HouseholdItemBinding
-import com.edstem.mockup.getDrawableRes
+import com.edstem.avaneeshAsokan.mockup.utils.getDrawableRes
 
 class HouseholdsAdapter(private val context: Context): RecyclerView.Adapter<HouseholdVH>() {
 

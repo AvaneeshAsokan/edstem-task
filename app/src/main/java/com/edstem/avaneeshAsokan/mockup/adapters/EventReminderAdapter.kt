@@ -1,4 +1,4 @@
-package com.edstem.mockup.adapters
+package com.edstem.avaneeshAsokan.mockup.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.edstem.mockup.R
-import com.edstem.mockup.adapters.viewHolders.ReminderVH
-import com.edstem.mockup.data.ReminderItems
+import com.edstem.avaneeshAsokan.mockup.adapters.viewHolders.ReminderVH
+import com.edstem.avaneeshAsokan.mockup.data.ReminderItems
 import com.edstem.mockup.databinding.BirthdayItemBinding
-import com.edstem.mockup.enums.ReminderType
-import com.edstem.mockup.getDrawableRes
+import com.edstem.avaneeshAsokan.mockup.enums.ReminderType
+import com.edstem.avaneeshAsokan.mockup.utils.getDrawableRes
 import java.text.SimpleDateFormat
 import java.util.*
 

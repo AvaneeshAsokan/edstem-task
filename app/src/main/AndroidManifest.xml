@@ -14,14 +14,14 @@
         android:theme="@style/Theme.EdstemTask"
         tools:targetApi="31">
         <activity
-            android:name=".activities.SplashScreen"
+            android:name="com.edstem.avaneeshAsokan.mockup.activities.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MainActivity"/>
+        <activity android:name="com.edstem.avaneeshAsokan.mockup.activities.MainActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"

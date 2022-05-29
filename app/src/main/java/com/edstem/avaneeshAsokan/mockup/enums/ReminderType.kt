@@ -1,4 +1,4 @@
-package com.edstem.mockup.enums
+package com.edstem.avaneeshAsokan.mockup.enums
 
 /**
  * This is used to define the type of events that the user is being reminded of.

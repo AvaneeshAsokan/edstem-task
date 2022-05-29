@@ -1,4 +1,4 @@
-package com.edstem.mockup.adapters.layoutManagers
+package com.edstem.avaneeshAsokan.mockup.adapters.layoutManagers
 
 import android.content.Context
 import androidx.recyclerview.widget.LinearLayoutManager

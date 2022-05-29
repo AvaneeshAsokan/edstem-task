@@ -1,4 +1,4 @@
-package com.edstem.mockup.adapters.viewHolders
+package com.edstem.avaneeshAsokan.mockup.adapters.viewHolders
 
 import androidx.recyclerview.widget.RecyclerView
 import com.edstem.mockup.databinding.BirthdayItemBinding

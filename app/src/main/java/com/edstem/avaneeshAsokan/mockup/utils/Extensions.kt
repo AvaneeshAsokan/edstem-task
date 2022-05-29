@@ -1,4 +1,4 @@
-package com.edstem.mockup
+package com.edstem.avaneeshAsokan.mockup.utils
 
 import android.app.Activity
 import android.content.Context

@@ -1,6 +1,6 @@
-package com.edstem.mockup.data
+package com.edstem.avaneeshAsokan.mockup.data
 
-import com.edstem.mockup.enums.ReminderType
+import com.edstem.avaneeshAsokan.mockup.enums.ReminderType
 
 /**
  * Mock data holder for reminder items.

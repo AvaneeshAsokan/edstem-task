@@ -1,4 +1,4 @@
-package com.edstem.mockup.activities
+package com.edstem.avaneeshAsokan.mockup.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.edstem.mockup.databinding.ActivitySplashBinding
-import com.edstem.mockup.hideSystemBars
+import com.edstem.avaneeshAsokan.mockup.utils.hideSystemBars
 
 class SplashScreen: AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.edstem.mockup.activities
+package com.edstem.avaneeshAsokan.mockup.activities
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -8,14 +8,15 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.edstem.mockup.R
-import com.edstem.mockup.adapters.OverlappingItemAdapter
-import com.edstem.mockup.adapters.OverlappingItemDecoration
-import com.edstem.mockup.data.UserNotification
+import com.edstem.avaneeshAsokan.mockup.adapters.OverlappingItemAdapter
+import com.edstem.avaneeshAsokan.mockup.adapters.OverlappingItemDecoration
+import com.edstem.avaneeshAsokan.mockup.data.UserNotification
 import com.edstem.mockup.databinding.ActivityMainBinding
-import com.edstem.mockup.fragments.ComingSoonFragment
-import com.edstem.mockup.fragments.HomeFragment
-import com.edstem.mockup.hideSystemBars
-import com.edstem.mockup.toast
+import com.edstem.avaneeshAsokan.mockup.fragments.ComingSoonFragment
+import com.edstem.avaneeshAsokan.mockup.fragments.HomeFragment
+import com.edstem.avaneeshAsokan.mockup.utils.hideSystemBars
+import com.edstem.avaneeshAsokan.mockup.utils.toast
+import com.edstem.mockup.databinding.DrawerLayoutBinding
 import com.google.android.material.navigation.NavigationView
 
 /**
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private lateinit var contributeFragment: ComingSoonFragment
 
     private lateinit var binding            : ActivityMainBinding
+    private lateinit var sideNavBinding     : DrawerLayoutBinding
     private lateinit var notificationAdapter: OverlappingItemAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -120,6 +122,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.drawer.addDrawerListener(toggle)
         toggle.syncState()
         binding.sideMenu.setNavigationItemSelectedListener(this@MainActivity)
+        sideNavBinding = DrawerLayoutBinding.bind(binding.sideMenuContent.root)
+
+        // bye bye
+        sideNavBinding.logoutBtn.setOnClickListener { finish() }
     }
 
     /**

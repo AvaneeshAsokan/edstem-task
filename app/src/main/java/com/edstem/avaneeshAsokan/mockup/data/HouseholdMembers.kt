@@ -1,4 +1,4 @@
-package com.edstem.mockup.data
+package com.edstem.avaneeshAsokan.mockup.data
 
 /**
  * Mock data holder for the Household members

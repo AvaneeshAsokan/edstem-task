@@ -1,4 +1,4 @@
-package com.edstem.mockup.fragments
+package com.edstem.avaneeshAsokan.mockup.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -1,4 +1,4 @@
-package com.edstem.mockup.adapters
+package com.edstem.avaneeshAsokan.mockup.adapters
 
 import android.graphics.Rect
 import android.view.View
