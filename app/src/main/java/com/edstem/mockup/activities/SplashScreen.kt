@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.edstem.mockup.databinding.ActivitySplashBinding
+import com.edstem.mockup.hideSystemBars
 
 class SplashScreen: AppCompatActivity() {
 
@@ -14,6 +15,7 @@ class SplashScreen: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
+        hideSystemBars()
         setContentView(binding.root)
 
         Handler(Looper.getMainLooper()).postDelayed({
